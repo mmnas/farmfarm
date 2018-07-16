@@ -100,6 +100,22 @@
 	                     <li><a href="#">로그아웃</a></li>
 	                  </ul>
 	            </c:if>
+	            
+	            <c:if test="${grade == 3}">
+					<li class="dropdown"><a href="#" class="dropdown=toggle"
+		                  data-toggle="dropdown" role="button" aria-haspopup="true"
+		                  aria-expanded="false">관리자<span class="caret"></span></a>
+		            
+	                 <ul class="dropdown-menu">
+                        <li><a href="ProductManage">상품 관리</a></li>
+                        <li><a href="PartnerStatus">회원 관리</a></li>
+                        <li><a href="CalculList">정산 관리</a></li>
+                        <li><a href="BoardManage">게시판 관리</a></li>
+                        <li><a href="DonateManage">기부 관리</a></li>
+                        <li><a href="WeekFarmManage">주말농장 관리</a></li>
+                        <li><a href="FarmFarm">로그아웃</a></li>
+                     </ul>
+	            </c:if>
             </ul>
          </div>
       </nav>
