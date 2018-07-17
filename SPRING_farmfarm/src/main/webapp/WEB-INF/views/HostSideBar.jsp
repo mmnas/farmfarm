@@ -88,11 +88,11 @@
                     <span>게시판</span>
                 </a>
                 <ul class="sub">
-                	<li><a  href="morris.html">공지사항</a></li>
-                    <li><a  href="morris.html">문의 게시판[농부]</a></li>
-                    <li><a  href="chartjs.html">문의 게시판[회원]</a></li>
-                    <li><a  href="morris.html">소식 게시판</a></li>
-                    <li><a  href="chartjs.html">요청 게시판</a></li>
+                	<li><a  href="BoardManage.ad">공지사항</a></li>
+                    <li><a  href="#">문의 게시판[농부]</a></li>
+                    <li><a  href="#">문의 게시판[회원]</a></li>
+                    <li><a  href="#">소식 게시판</a></li>
+                    <li><a  href="#">요청 게시판</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -101,9 +101,9 @@
                     <span>기부</span>
                 </a>
                 <ul class="sub">
-                    <li><a  href="morris.html">기부내역</a></li>
-                    <li><a  href="chartjs.html">기부업체관리</a></li>
-                    <li><a  href="morris.html">통계</a></li>
+                    <li><a  href="DonateList.ad">기부내역</a></li>
+                    <li><a  href="DonateConList.ad">기부업체관리</a></li>
+                    <li><a  href="DonateTotal.ad">통계</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -112,8 +112,8 @@
                     <span>주말농장</span>
                 </a>
                 <ul class="sub">
-                	<li><a  href="morris.html">주말농장</a></li>
-                  <li><a  href="morris.html">IoT</a></li>
+                	<li><a  href="WeekFarmManage.ad">주말농장</a></li>
+                  <li><a  href="IOTManage.ad">IoT</a></li>
                 </ul>
             </li>
             

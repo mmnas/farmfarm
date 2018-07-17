@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>펀드 리스트</title>
 </head>
 <body>
+
 	<!-- 헤더 -->
 	<%@ include file="../Header.jsp" %>
  	
