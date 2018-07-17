@@ -52,79 +52,108 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.html"><img src="resources/css/assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered">Marcel Newman</h5>
+              	  <h5 class="centered">관리자</h5>
               	  	
-                  <li class="mt">
-                      <a class="active" href="index.html">
+                  <!-- <li class="mt">
+                      <a class="active" href="#">
                           <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
+                          <span>기본</span>
                       </a>
-                  </li>
+           			  <ul class="sub">
+                          <li><a  href="general.html">General</a></li>
+                          <li><a  href="buttons.html">Buttons</a></li>
+                          <li><a  href="panels.html">Panels</a></li>
+                      </ul> 
+                  </li> -->
 
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-desktop"></i>
-                          <span>UI Elements</span>
+                          <span>펀드</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="general.html">General</a></li>
-                          <li><a  href="buttons.html">Buttons</a></li>
-                          <li><a  href="panels.html">Panels</a></li>
+                          <li><a  href="FundList.ad">진행내역</a></li>
+                          <li><a  href="buttons.html">미등록 펀드(승인대기)</a></li>
+                          <li><a  href="panels.html">통계</a></li>
                       </ul>
                   </li>
 
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-cogs"></i>
-                          <span>Components</span>
+                          <span>경매</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="calendar.html">Calendar</a></li>
-                          <li><a  href="gallery.html">Gallery</a></li>
-                          <li><a  href="todo_list.html">Todo List</a></li>
+                          <li><a  href="AucList.ad">진행내역</a></li>
+                          <li><a  href="gallery.html">미등록 경매(승인대기)</a></li>
+                          <li><a  href="todo_list.html">통계</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-book"></i>
-                          <span>Extra Pages</span>
+                          <span>파트너 관리</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="blank.html">Blank Page</a></li>
-                          <li><a  href="login.html">Login</a></li>
-                          <li><a  href="lock_screen.html">Lock Screen</a></li>
+                          <li><a  href="blank.html">파트너 관리</a></li>
+                          <li><a  href="login.html">어드벤티지 관리</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-tasks"></i>
-                          <span>Forms</span>
+                          <span>회원관리</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="form_component.html">Form Components</a></li>
+                          <li><a  href="form_component.html">회원관리</a></li>
+                          <li><a  href="responsive_table.html">어드벤티지 관리</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-th"></i>
-                          <span>Data Tables</span>
+                          <span>정산관리</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="basic_table.html">Basic Table</a></li>
-                          <li><a  href="responsive_table.html">Responsive Table</a></li>
+                          <li><a  href="basic_table.html">펀드</a></li>
+                          <li><a  href="responsive_table.html">경매</a></li>
                       </ul>
                   </li>
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class=" fa fa-bar-chart-o"></i>
-                          <span>Charts</span>
+                          <span>게시판</span>
                       </a>
                       <ul class="sub">
-                          <li><a  href="morris.html">Morris</a></li>
-                          <li><a  href="chartjs.html">Chartjs</a></li>
+                      	<li><a  href="morris.html">공지사항</a></li>
+                          <li><a  href="morris.html">문의 게시판[농부]</a></li>
+                          <li><a  href="chartjs.html">문의 게시판[회원]</a></li>
+                          <li><a  href="morris.html">소식 게시판</a></li>
+                          <li><a  href="chartjs.html">요청 게시판</a></li>
                       </ul>
                   </li>
-
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class=" fa fa-bar-chart-o"></i>
+                          <span>기부</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="morris.html">기부내역</a></li>
+                          <li><a  href="chartjs.html">기부업체관리</a></li>
+                          <li><a  href="morris.html">통계</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class=" fa fa-bar-chart-o"></i>
+                          <span>주말농장</span>
+                      </a>
+                      <ul class="sub">
+                      	<li><a  href="morris.html">주말농장</a></li>
+                        <li><a  href="morris.html">IoT</a></li>
+                      </ul>
+                  </li>
+                  
               </ul>
               <!-- sidebar menu end-->
           </div>
