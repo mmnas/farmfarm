@@ -16,6 +16,7 @@ public class MemberDAOImpl implements MemberDAO {
 	@Autowired
 	private SqlSession ss;
 	
+	//아이디중복확인
 	@Override
 	public int idPwdCheck(Map<String, String> map) {
 		int selectCnt=0;		
@@ -25,6 +26,7 @@ public class MemberDAOImpl implements MemberDAO {
 		return selectCnt;
 	}
 
+	//id,pwd확인
 	@Override
 	public int idCheck(String strId) {
 		int selectCnt=0;		
@@ -34,6 +36,7 @@ public class MemberDAOImpl implements MemberDAO {
 		return selectCnt;
 	}
 
+	//회원가입처리
 	@Override
 	public int insertMember(MemberDTO dto) {
 		int insertCnt=0;		

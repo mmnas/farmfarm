@@ -76,46 +76,54 @@
 
             <!-- 네비게이션 바를 오른쪽 정렬을 하겠다. -->
             <ul class="nav navbar-nav navbar-right">
-            <c:if test="${grade ==null }">
-               <li class="dropdown"><a href="#" class="dropdown=toggle"
-                  data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">접속하기<span class="caret"></span></a> <!-- 
-               접속하기<span class="caret">
-               caret은 아래화살표 클릭시 아이콘이 나오도록 하는 기능
-                -->
-                  <ul class="dropdown-menu">
-                     <li><a href="loginForm">로그인</a></li>
-                     <li><a href="registerForm">회원가입</a></li>
-                  </ul>
-                 </c:if>
-                 <c:if test="${grade == 2}">
-					<li class="dropdown"><a href="#" class="dropdown=toggle"
-		                  data-toggle="dropdown" role="button" aria-haspopup="true"
-		                  aria-expanded="false">농부<span class="caret"></span></a>
-		            
-	                 <ul class="dropdown-menu">
-	                     <li><a href="#">이용내역</a></li>
-	                     <li><a href="#">프로필</a></li>
-	                     <li><a href="#">지불정보</a></li>
-	                     <li><a href="#">로그아웃</a></li>
-	                  </ul>
-	            </c:if>
+            	<!-- 비회원 헤더 -->
+	           <c:if test="${grade ==null }">
+	              <li class="dropdown"><a href="#" class="dropdown=toggle"
+	                 data-toggle="dropdown" role="button" aria-haspopup="true"
+	                 aria-expanded="false">접속하기<span class="caret"></span></a>
+	                 <!-- 
+	              		접속하기<span class="caret">
+	              		caret은 아래화살표 클릭시 아이콘이 나오도록 하는 기능
+	               	 -->
+	            <ul class="dropdown-menu">
+	               <li><a href="loginForm">로그인</a></li>
+	               <li><a href="registerForm">회원가입</a></li>
+	            </ul>
+	           </c:if>
+	           
+	           <!-- 농부 헤더 -->
+	           <c:if test="${grade == 2}">
+				<li class="dropdown"><a href="#" class="dropdown=toggle"
+	                  data-toggle="dropdown" role="button" aria-haspopup="true"
+	                  aria-expanded="false">농부<span class="caret"></span></a>
 	            
-	            <c:if test="${grade == 3}">
-					<li class="dropdown"><a href="#" class="dropdown=toggle"
-		                  data-toggle="dropdown" role="button" aria-haspopup="true"
-		                  aria-expanded="false">관리자<span class="caret"></span></a>
-		            
-	                 <ul class="dropdown-menu">
-                        <li><a href="ProductManage">상품 관리</a></li>
-                        <li><a href="PartnerStatus">회원 관리</a></li>
-                        <li><a href="CalculList">정산 관리</a></li>
-                        <li><a href="BoardManage">게시판 관리</a></li>
-                        <li><a href="DonateManage">기부 관리</a></li>
-                        <li><a href="WeekFarmManage">주말농장 관리</a></li>
-                        <li><a href="FarmFarm">로그아웃</a></li>
-                     </ul>
-	            </c:if>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">이용내역</a></li>
+	                    <li><a href="#">프로필</a></li>
+	                    <li><a href="#">지불정보</a></li>
+	                    <li><a href="#">로그아웃</a></li>
+	                 </ul>
+	           </c:if>
+	           
+	           <!-- 관리자 헤더 -->
+	           <c:if test="${grade == 3}">
+				<li class="dropdown"><a href="#" class="dropdown=toggle"
+	                  data-toggle="dropdown" role="button" aria-haspopup="true"
+	                  aria-expanded="false">
+	                  <!-- 관리자 아이콘 - 마이페이지로 연결된다. -->
+	                  <img src="resources/images/host/farmHost.png" width="50px" height="50px">
+	                  <span class="caret"></span></a>
+	            
+	                <ul class="dropdown-menu">
+	                      <li><a href="ProductManage">상품 관리</a></li>
+	                      <li><a href="PartnerStatus">회원 관리</a></li>
+	                      <li><a href="CalculList">정산 관리</a></li>
+	                      <li><a href="BoardManage">게시판 관리</a></li>
+	                      <li><a href="DonateManage">기부 관리</a></li>
+	                      <li><a href="WeekFarmManage">주말농장 관리</a></li>
+	                      <li><a href="FarmFarm">로그아웃</a></li>
+                    </ul>
+	           </c:if>
             </ul>
          </div>
       </nav>
