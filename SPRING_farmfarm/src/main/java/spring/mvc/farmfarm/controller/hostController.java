@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class hostController {
 
-	@RequestMapping("ProductManage2.ad")
+	@RequestMapping("ProductManage.ad")
 	public String productManage(HttpServletRequest req, Model model) {
 		System.out.println("ProductManage.ad");
 		
-		return "host/ProductManage2";
+		return "host/ProductManage";
 	}
 	
 	@RequestMapping("FundList.ad")

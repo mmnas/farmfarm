@@ -7,6 +7,17 @@
 <title>펀드 리스트</title>
 </head>
 <body>
- 펀드 리스트
+
+	<!-- 헤더 -->
+	<%@ include file="../Header.jsp" %>
+ 	
+ 	<!-- 관리자 사이드 바 -->
+	<%@ include file="../HostSideBar.jsp" %>
+ 	
+ 	펀드 진행 내역
+ 	
+ 	<!-- 푸터 -->
+	<%@ include file="../Footer.jsp" %>
+ 	
 </body>
 </html>

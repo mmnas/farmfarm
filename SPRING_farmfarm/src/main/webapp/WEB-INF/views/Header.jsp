@@ -27,9 +27,9 @@
       <nav class="container-fluid">
      	 
      	 <!-- ****헤더 토글 추가  -->
-      			<div class="sidebar-toggle-box">
-                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-              </div>
+ 		 <div class="sidebar-toggle-box">
+			<div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+         </div>
          <!-- ****헤더 토글 추가 끝 --> 
               
          <div class="navbar-header">
