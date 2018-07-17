@@ -5,11 +5,33 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="resources/css/bootstrap.css">
 
+<!-- ***추가 css  -->
+ <!-- Bootstrap core CSS -->
+    <link href="resources/css/assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="resources/css/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="resources/css/assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/assets/lineicons/style.css">    
+    
+    <!-- Custom styles for this template -->
+    <link href="resources/css/assets/css/style.css" rel="stylesheet">
+    <link href="resources/css/assets/css/style-responsive.css" rel="stylesheet">
+
+    <script src="resources/css/assets/js/chart-master/Chart.js"></script>
+<!-- ***추가 끝css  -->
 <body>
 <!-- 헤더시작 -->
    <nav class="navbar navbar-default">
       <!-- 가장 기본적인 형태의 네비게이션 바 -->
       <nav class="container-fluid">
+     	 
+     	 <!-- ****헤더 토글 추가  -->
+      			<div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+         <!-- ****헤더 토글 추가 끝 --> 
+              
          <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed"
                data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"

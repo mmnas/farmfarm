@@ -13,8 +13,14 @@ public class hostController {
 	public String productManage(HttpServletRequest req, Model model) {
 		System.out.println("ProductManage.ad");
 		
-		
-		
 		return "host/ProductManage";
+	}
+	
+	//관리자 2
+	@RequestMapping("ProductManage2.ad")
+	public String productManage2(HttpServletRequest req, Model model) {
+		System.out.println("ProductManage.ad");
+		
+		return "host/ProductManage2";
 	}
 }
