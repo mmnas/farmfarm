@@ -23,9 +23,9 @@
                     <span>기본</span>
                 </a>
      			  <ul class="sub">
-                    <li><a  href="general.html">General</a></li>
-                    <li><a  href="buttons.html">Buttons</a></li>
-                    <li><a  href="panels.html">Panels</a></li>
+                    <li><a href="general.html">General</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                    <li><a href="panels.html">Panels</a></li>
                 </ul> 
             </li> -->
 
@@ -35,9 +35,8 @@
                     <span>펀드</span>
                 </a>
                 <ul class="sub">
-                    <li><a  href="FundList.ad">진행내역</a></li>
-                    <li><a  href="buttons.html">미등록 펀드(승인대기)</a></li>
-                    <li><a  href="panels.html">통계</a></li>
+                    <li><a href="FundList.ad">진행내역</a></li>
+                    <li><a href="NoFund.ad">미등록 펀드(승인대기)</a></li>
                 </ul>
             </li>
 
@@ -47,9 +46,8 @@
                     <span>경매</span>
                 </a>
                 <ul class="sub">
-                    <li><a  href="AucList.ad">진행내역</a></li>
-                    <li><a  href="gallery.html">미등록 경매(승인대기)</a></li>
-                    <li><a  href="todo_list.html">통계</a></li>
+                    <li><a href="AucList.ad">진행내역</a></li>
+                    <li><a href="NoAuc.ad">미등록 경매(승인대기)</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -58,8 +56,8 @@
                     <span>파트너 관리</span>
                 </a>
                 <ul class="sub">
-                    <li><a  href="blank.html">파트너 관리</a></li>
-                    <li><a  href="login.html">어드벤티지 관리</a></li>
+                    <li><a href="PartnerManage.ad">파트너 관리</a></li>
+                    <li><a href="PartnerAdvManage.ad">어드벤티지 관리</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -68,8 +66,8 @@
                     <span>회원관리</span>
                 </a>
                 <ul class="sub">
-                    <li><a  href="form_component.html">회원관리</a></li>
-                    <li><a  href="responsive_table.html">어드벤티지 관리</a></li>
+                    <li><a href="GuestManage.ad">회원관리</a></li>
+                    <li><a href="GuestAdvManage.ad">어드벤티지 관리</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -78,8 +76,8 @@
                     <span>정산관리</span>
                 </a>
                 <ul class="sub">
-                    <li><a  href="basic_table.html">펀드</a></li>
-                    <li><a  href="responsive_table.html">경매</a></li>
+                    <li><a href="FundTotal.ad">펀드</a></li>
+                    <li><a href="AucTotal.ad">경매</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
