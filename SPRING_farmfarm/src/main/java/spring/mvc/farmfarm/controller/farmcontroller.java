@@ -228,6 +228,7 @@ public class farmcontroller {
 	public String updateInfoView(HttpServletRequest req, Model model) {
 		System.out.println("updateInfoView");
 		
+		
 		return	"guest/updateInfoView";
 	}
 	
