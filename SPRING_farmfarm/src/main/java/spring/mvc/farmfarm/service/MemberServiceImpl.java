@@ -101,26 +101,50 @@ public class MemberServiceImpl implements MemberService {
 		
 		
 	}
-
+	
+	@Override
+	public void UpdateMemberView(HttpServletRequest req, Model model) {
+		String id = (String)req.getSession().getAttribute("userId");
+		String pwd = req.getParameter("userPassword");
+		int selectCnt=0;
+		
+		Map<String, String> map = new HashMap<>();
+		map.put("id", id);
+		map.put("pwd", pwd);
+		selectCnt=dao.idPwdCheck(map);
+		
+		if(selectCnt==1) {
+			MemberDTO dto = dao.getMemberInfo(id);
+			model.addAttribute("dto", dto);	
+			System.out.println("dto보냄");
+		}
+		model.addAttribute("selectCnt", selectCnt);
+		
+	}
+	
 	@Override
 	public void updateMemberPro(HttpServletRequest req, Model model) {
-		/*String strId = (String) req.getSession().getAttribute("memberId");
-		String strPwd = req.getParameter("pwd");
-		String strHp=req.getParameter("hp");
-		String strEmail = req.getParameter("email1")+"@"+req.getParameter("email2");		
+		String mem_id = (String) req.getSession().getAttribute("userId");
+		String mem_pwd = req.getParameter("userPassword");
+		String mem_hp=req.getParameter("hp");
+		String mem_address=req.getParameter("address");
+		String mem_email = req.getParameter("email");		
 		int updateCnt=0;
 		
 		MemberDTO dto = new MemberDTO();
-		dto.setId(strId);
-		dto.setPwd(strPwd);
-		dto.setHp(strHp);
-		dto.setEmail(strEmail);
+		dto.setMem_id(mem_id);
+		dto.setMem_pwd(mem_pwd);
+		dto.setMem_hp(mem_hp);
+		dto.setMem_address(mem_address);
+		dto.setMem_email(mem_email);
 		
 		updateCnt=dao.UpdateMember(dto);
-		System.out.println("(servirce)updateCnt:"+updateCnt);
+		System.out.println("mem_ser_updateCnt:"+updateCnt);
 		
-		req.setAttribute("updateCnt", updateCnt);*/
+		req.setAttribute("updateCnt", updateCnt);
 		
 	}
+
+	
 
 }

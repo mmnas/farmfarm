@@ -23,12 +23,12 @@
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-pencil text-primary"></span><a href="updateInfoPage?grade=${grade}">회원정보 수정</a>
+                                        <span class="glyphicon glyphicon-pencil text-primary"></span><a href="updateInfoPage">회원정보 수정</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-remove text-success"></span><a href="deleteMember?grade=${grade}">회원탈퇴</a>
+                                        <span class="glyphicon glyphicon-remove text-success"></span><a href="deleteMember">회원탈퇴</a>
                                     </td>
                                 </tr>
                             </table>
@@ -38,8 +38,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#"><span class="glyphicon glyphicon-check">
-                            </span>회원 점수</a>
+                        	<span class="glyphicon glyphicon-check"></span><a href="gusetAdv">회원 점수</a>
                         </h4>
                     </div>                    
                 </div>

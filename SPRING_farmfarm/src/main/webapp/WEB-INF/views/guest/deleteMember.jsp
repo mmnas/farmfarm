@@ -114,7 +114,7 @@
 	<%@include file="../Header.jsp" %>
 </header>
 <div style="float:left; ">
-	<%@include file="../Aside.jsp" %>		
+	<%@include file="../MemberSideBar.jsp" %>		
 </div>
 
 <div style="height: 500px">
@@ -159,8 +159,5 @@
 	<%@include file="../Footer.jsp" %>
 </footer>
 
-<!--스크립트 공통부분  -->
-   <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-   <script src="resources/js/bootstrap.js"></script>
 </body>
 </html>

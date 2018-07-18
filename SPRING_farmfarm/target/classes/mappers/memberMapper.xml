@@ -20,4 +20,13 @@
 	<delete id="deleteMember" parameterType="String">
 		delete from tbl_member where mem_id=#{strId}
 	</delete>
+	
+	<select id="getMemberInfo" resultType="spring.mvc.farmfarm.dto.MemberDTO">
+		select * from tbl_member where mem_id=#{strId}
+	</select>
+	
+	<update id="UpdateMember" parameterType="spring.mvc.farmfarm.dto.MemberDTO">
+		update tbl_member set mem_pwd=#{mem_pwd}, mem_hp=#{mem_hp}, mem_email=#{mem_email}, mem_address=#{mem_address} where mem_id=#{mem_id}
+	</update>
+	
 </mapper>

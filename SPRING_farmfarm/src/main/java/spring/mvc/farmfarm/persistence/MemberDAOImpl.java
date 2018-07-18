@@ -51,5 +51,21 @@ public class MemberDAOImpl implements MemberDAO {
 		deleteCnt=dao.deleteMember(strId);
 		return deleteCnt;
 	}
+
+	@Override
+	public MemberDTO getMemberInfo(String strId) {
+		MemberDTO dto=null;
+		MemberDAO dao =ss.getMapper(MemberDAO.class);
+		dto=dao.getMemberInfo(strId);
+		return dto;
+	}
+
+	@Override
+	public int UpdateMember(MemberDTO dto) {
+		int updateCnt=0;
+		MemberDAO dao =ss.getMapper(MemberDAO.class);
+		updateCnt=dao.UpdateMember(dto);
+		return updateCnt;
+	}
 	
 }

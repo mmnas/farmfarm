@@ -228,7 +228,7 @@ public class farmcontroller {
 	public String updateInfoView(HttpServletRequest req, Model model) {
 		System.out.println("updateInfoView");
 		
-		
+		mem_service.UpdateMemberView(req, model);
 		return	"guest/updateInfoView";
 	}
 	
@@ -256,7 +256,14 @@ public class farmcontroller {
 		mem_service.deleteMemberPro(req, model);
 		req.getSession().invalidate();
 		return	"guest/deleteMemberPro";
-	}	
+	}
 	
+	//회원점수
+	@RequestMapping("gusetAdv")
+	public String gusetAdv(HttpServletRequest req, Model model) {
+		System.out.println("gusetAdv");
+		
+		return	"guest/gusetAdv";
+	}
 	
 }

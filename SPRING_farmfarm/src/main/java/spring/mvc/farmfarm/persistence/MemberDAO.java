@@ -14,4 +14,8 @@ public interface MemberDAO {
 	public int insertMember(MemberDTO dto);
 	//회원탈퇴처리
 	public int deleteMember(String strId);
+	//회원정보 수정뷰
+	public MemberDTO getMemberInfo(String strId);
+	//회원정보 수정처리
+	public int UpdateMember(MemberDTO dto);
 }

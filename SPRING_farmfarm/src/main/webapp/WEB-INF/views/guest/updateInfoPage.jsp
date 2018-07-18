@@ -2,10 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../setting.jsp" %>    
 <html>
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
 <style type="text/css">
 	/* body {
@@ -114,7 +110,7 @@
 	<%@include file="../Header.jsp" %>
 </header>
 <div style="float:left; ">
-	<%@include file="../Aside.jsp" %>		
+	<%@include file="../MemberSideBar.jsp" %>		
 </div>
 
 <div style="height: 500px">
@@ -159,8 +155,6 @@
 	<%@include file="../Footer.jsp" %>
 </footer>
 
-<!--스크립트 공통부분  -->
-   <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-   <script src="resources/js/bootstrap.js"></script>
 </body>
+
 </html>
