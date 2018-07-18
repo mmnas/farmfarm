@@ -130,10 +130,7 @@
 			<div class="panel panel-login">
 				<div class="panel-heading">
 					<div class="row">
-						<div class="col-xs-6">
-							<a href="#" id="login-form-link">로그인</a>
-						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-12">
 							<a href="#" class="active" id="register-form-link">회원가입</a>
 						</div>
 					</div>
@@ -142,34 +139,6 @@
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-lg-12">
-							<form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: none;">
-								<div class="form-group">
-									<input type="text" name="userID" id="userID" tabindex="1" class="form-control" placeholder="아이디" value="">
-								</div>
-								<div class="form-group">
-									<input type="password" name="userPassword" id="userPassword" tabindex="2" class="form-control" placeholder="비밀번호">
-								</div>
-								<div class="form-group text-center">
-									<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-									<label for="remember">아이디 기억하기</label>
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col-sm-6 col-sm-offset-3">
-											<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="로그인">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col-lg-12">
-											<div class="text-center">
-												<a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">비밀번호 찾기</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</form>
 							<form id="registerForm" name="registerForm" action="registerPro" method="post" role="form" style="display: block;">
 								<div class="form-group">
 									<input type="text" name="userId" id="userId" tabindex="1" class="form-control-sub" placeholder="아이디" value="">
@@ -249,9 +218,10 @@
  <script type="text/javascript">
  function clickCinfirm(){
 	// 아이디값 미 입력시
-	if (!document.registerForm.userId.value) {
+	var target=document.registerForm.userId;
+	if (!target.value) {
 			alert(msg_id);
-			document.registerForm.userId.focus();
+			target.focus();
 			return false;
 		}
 	// 중복체크 눌렀을시
@@ -259,7 +229,7 @@
 		 * window.open("주소","파일명","별칭[윈도우명]","속성");
 		 * 
 		 */
-	 var url="confirmId?userId=" + document.registerForm.userId.value;
+	 var url="confirmId?userId=" + target.value;
 	 window.open(url, "confirm", "width=400, height=300, left=500, top=400");
  }
  </script>

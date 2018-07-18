@@ -12,4 +12,6 @@ public interface MemberDAO {
 	public int idPwdCheck(Map<String, String> map);
 	//회원가입처리
 	public int insertMember(MemberDTO dto);
+	//회원탈퇴처리
+	public int deleteMember(String strId);
 }

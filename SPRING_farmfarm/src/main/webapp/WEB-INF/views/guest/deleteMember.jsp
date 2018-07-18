@@ -1,17 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="../setting.jsp" %>    
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width" , initial-scale="1">
-<title>로그인</title>
-<link rel="stylesheet" href="resources/css/bootstrap.css">
-<!-- 외부스타일 시트 적용 -->
-</head>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<body>
-
-<!-- 1.css 추가부분 -->
 <style type="text/css">
 	/* body {
 	    padding-top: 90px;
@@ -114,20 +109,23 @@
 	}
 	
 </style>
-
-<!-- 헤더시작 -->
+<body>
+<header>
 	<%@include file="../Header.jsp" %>
-<!-- 헤더끝 --> 
-   <!--2 html 추가부분 -->
+</header>
+<div style="float:left; ">
+	<%@include file="../Aside.jsp" %>		
+</div>
 
-<div class="container">
+<div style="height: 500px">
+	<div class="container" style="margin-top: 100px">
    	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<div class="panel panel-login">
 				<div class="panel-heading">
 					<div class="row">
 						<div class="col-xs-12">
-							<a href="#" class="active" id="login-form-link">로그인</a>
+							<a href="#" id="login-form-link">회원 탈퇴</a>
 						</div>
 					
 					</div>
@@ -136,30 +134,15 @@
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-lg-12">
-							<form id="login-form" action="LoginPro" method="post" role="form" style="display: block;">
-								<div class="form-group">
-									<input type="text" name="userId" id="userId" tabindex="1" class="form-control" placeholder="아이디" value="">
-								</div>
+							<form id="login-form" action="deleteMemberPro" method="post" role="form" style="display: block;">
 								<div class="form-group">
 									<input type="password" name="userPassword" id="userPassword" tabindex="2" class="form-control" placeholder="비밀번호">
-								</div>
-								<div class="form-group text-center">
-									<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-									<label for="remember">아이디 기억하기</label>
+									<input type="hidden" name="grade" value="${grade}">
 								</div>
 								<div class="form-group">
 									<div class="row">
 										<div class="col-sm-6 col-sm-offset-3">
-											<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="로그인">
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col-lg-12">
-											<div class="text-center">
-												<a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">비밀번호 찾기</a>
-											</div>
+											<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="확인">
 										</div>
 									</div>
 								</div>
@@ -171,42 +154,14 @@
 		</div>
 	</div>
 </div>
-   <!-- 추가 -->
-   <!-- 4.푸터 : 홈페이지의 기타 정보를 보여주는 역할을 수행한다.
-      홈페이지의 가장 아래쪽에 위치하고 저작권, 개발자, 네비게이션 등을 포함한다.
-    -->
-  <!-- 4.푸터 -->
-    <footer >
+</div>
+	
+<footer>
 	<%@include file="../Footer.jsp" %>
-    </footer>
-   <!--푸터 끝  --> 
- 
-<!-- 자바스크립트 공통부분 -->
+</footer>
+
+<!--스크립트 공통부분  -->
    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
    <script src="resources/js/bootstrap.js"></script>
- <!-- 자바스크립트 공통부분 -->
- 
- <!-- 3 js 추가부분 -->
- <script type="text/javascript">
- $(function() {
-
-    $('#login-form-link').click(function(e) {
-		$("#login-form").delay(100).fadeIn(100);
- 		$("#register-form").fadeOut(100);
-		$('#register-form-link').removeClass('active');
-		$(this).addClass('active');
-		e.preventDefault();
-	});
-	$('#register-form-link').click(function(e) {
-		$("#register-form").delay(100).fadeIn(100);
- 		$("#login-form").fadeOut(100);
-		$('#login-form-link').removeClass('active');
-		$(this).addClass('active');
-		e.preventDefault();
-	});
-
-});
- </script>
-
 </body>
 </html>

@@ -14,7 +14,7 @@
 <c:if test="${sessionScope.userId!=null }">
 		<script type="text/javascript">
 			alert("로그인 성공");
-			window.location='FarmFarm';
+			window.location='FarmFarm?grade=${grade}';
 		</script>
 </c:if>
 

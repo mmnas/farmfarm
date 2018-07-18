@@ -20,6 +20,8 @@ public class farmcontroller {
 	public String farmFarmBootStrap(HttpServletRequest req, Model model) {
 		System.out.println("farmFarm");
 		
+		model.addAttribute("grade",req.getParameter("grade"));
+		
 		return	"common/FarmFarm";
 	}
 	//회원가입폼
@@ -62,6 +64,15 @@ public class farmcontroller {
 		return	"guest/LoginPro";
 	}
 	
+	//로그아웃
+	@RequestMapping("logout")
+	public String logout(HttpServletRequest req, Model model) {
+		System.out.println("logout");
+		
+		req.getSession().invalidate();
+		System.out.println("logout");
+		return	"common/FarmFarm";
+	}
 	//펀드상품보기
 	@RequestMapping("FundProducts")
 	public String FundProducts(HttpServletRequest req, Model model) {
@@ -203,8 +214,33 @@ public class farmcontroller {
 	}
 	
 	
-	
-	
+	/////////////////////////////일반회원 메뉴
+	//정보수정페이지
+	@RequestMapping("updateInfoPage")
+	public String updateInfoPage(HttpServletRequest req, Model model) {
+		System.out.println("updateInfoPage");
+		
+		model.addAttribute("grade",req.getParameter("grade"));
+		return	"guest/updateInfoPage";
+	}	
+	//회원탈퇴
+	@RequestMapping("deleteMember")
+	public String deleteMember(HttpServletRequest req, Model model) {
+		System.out.println("deleteMember");
+		
+		model.addAttribute("grade",req.getParameter("grade"));
+		return	"guest/deleteMember";
+	}	
+	//회원탈퇴처리
+	@RequestMapping("deleteMemberPro")
+	public String deleteMemberPro(HttpServletRequest req, Model model) {
+		System.out.println("deleteMemberPro");
+		
+		mem_service.deleteMemberPro(req, model);
+		model.addAttribute("grade",req.getParameter("grade"));
+		req.getSession().invalidate();
+		return	"guest/deleteMemberPro";
+	}	
 	
 	
 }

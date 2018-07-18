@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="resources/css/bootstrap.css">
 </head>
 <body>
-<footer>
     <div class="section-bottom">
         <div class="row center row no-gutter">
             <ul class="footer-link">
@@ -48,6 +47,5 @@
             </li>
         </ul>
     </div>
-</footer>
 </body>
 </html>

@@ -21,22 +21,23 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public void LoginPro(HttpServletRequest req, Model model) {
 		//3 값받기
-			int selectCnt=0;
-			String id = req.getParameter("userId");
-			String pwd = req.getParameter("userPassword");
-			System.out.println("id"+id);
-			System.out.println("pwd"+pwd);
-			//5 처리
-			Map<String, String> map = new HashMap<>();
-			map.put("id", id);
-			map.put("pwd", pwd);
-			selectCnt=dao.idPwdCheck(map);
-			
-			//6 전송
-			if(selectCnt==1) {//id,pwd 일치할시 id보냄
-				req.getSession().setAttribute("userId", id);
-				System.out.println("(일치)userId:"+id);
-			}
+		int grade=0;
+		String id = req.getParameter("userId");
+		String pwd = req.getParameter("userPassword");
+		System.out.println("id"+id);
+		System.out.println("pwd"+pwd);
+		//5 처리
+		Map<String, String> map = new HashMap<>();
+		map.put("id", id);
+		map.put("pwd", pwd);
+		grade=dao.idPwdCheck(map);
+		
+		//6 전송
+		if(grade!=0) {//id,pwd 일치할시 id보냄
+			req.getSession().setAttribute("userId", id);
+			System.out.println("(일치)userId:"+id+"  grade : "+grade);
+			model.addAttribute("grade",grade);
+		}
 		
 	}
 
@@ -76,6 +77,28 @@ public class MemberServiceImpl implements MemberService {
 		//6 전달
 		req.setAttribute("insertCnt", insertCnt);
 		System.out.println("service");
+		
+	}
+
+	@Override
+	public void deleteMemberPro(HttpServletRequest req, Model model) {
+		String id = (String) req.getSession().getAttribute("userId");
+		String pwd = req.getParameter("userPassword");
+		int selectCnt=0,deleteCnt=0;
+		
+		Map<String, String> map = new HashMap<>();
+		map.put("id", id);
+		map.put("pwd", pwd);
+		selectCnt=dao.idPwdCheck(map);
+		
+		if(selectCnt!=0) {
+			deleteCnt=dao.deleteMember(id);
+			if(deleteCnt!=0) {
+				System.out.println("deletecnt:"+deleteCnt);
+				model.addAttribute("deleteCnt",deleteCnt);
+			}
+		}
+		
 		
 	}
 

@@ -12,7 +12,9 @@
 <body>
 
 <!-- 헤더시작 -->
+<header>
 	<%@include file="../Header.jsp" %>
+</header>
 <!-- 헤더끝 --> 
  <!--슬라이드메뉴 시작  -->
 
