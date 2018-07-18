@@ -36,7 +36,7 @@ public class MemberServiceImpl implements MemberService {
 		if(grade!=0) {//id,pwd 일치할시 id보냄
 			req.getSession().setAttribute("userId", id);
 			System.out.println("(일치)userId:"+id+"  grade : "+grade);
-			model.addAttribute("grade",grade);
+			req.getSession().setAttribute("grade", grade);
 		}
 		
 	}
@@ -99,6 +99,27 @@ public class MemberServiceImpl implements MemberService {
 			}
 		}
 		
+		
+	}
+
+	@Override
+	public void updateMemberPro(HttpServletRequest req, Model model) {
+		/*String strId = (String) req.getSession().getAttribute("memberId");
+		String strPwd = req.getParameter("pwd");
+		String strHp=req.getParameter("hp");
+		String strEmail = req.getParameter("email1")+"@"+req.getParameter("email2");		
+		int updateCnt=0;
+		
+		MemberDTO dto = new MemberDTO();
+		dto.setId(strId);
+		dto.setPwd(strPwd);
+		dto.setHp(strHp);
+		dto.setEmail(strEmail);
+		
+		updateCnt=dao.UpdateMember(dto);
+		System.out.println("(servirce)updateCnt:"+updateCnt);
+		
+		req.setAttribute("updateCnt", updateCnt);*/
 		
 	}
 

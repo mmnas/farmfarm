@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 import spring.mvc.farmfarm.dto.MemberDTO;
 
 
-
 @Repository
 public class MemberDAOImpl implements MemberDAO {
 

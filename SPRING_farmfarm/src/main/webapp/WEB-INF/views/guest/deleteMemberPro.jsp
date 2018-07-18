@@ -7,7 +7,7 @@
 <c:if test="${deleteCnt==0 }">
 	<script type="text/javascript">
 		errorAlert(deleteError);
-		window.location='deleteMember?grade=${grade}';
+		window.location='deleteMember?';
 	</script>
 </c:if>
 <c:if test="${deleteCnt==1 }">

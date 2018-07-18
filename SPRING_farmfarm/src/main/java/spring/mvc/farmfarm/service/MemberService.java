@@ -12,6 +12,8 @@ public interface MemberService {
 	//회원가입 처리
 	public void registerPro(HttpServletRequest req, Model model);
 	
-	//회원탈퇴
+	//회원수정처리
+	public void updateMemberPro(HttpServletRequest req, Model model);	
+	//회원탈퇴처리
 	public void deleteMemberPro(HttpServletRequest req, Model model);
 }

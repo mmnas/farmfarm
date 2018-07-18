@@ -31,13 +31,6 @@
                                         <span class="glyphicon glyphicon-remove text-success"></span><a href="deleteMember?grade=${grade}">회원탈퇴</a>
                                     </td>
                                 </tr>
-                                
-                                <tr>
-                                    <td>
-                                        <span class="glyphicon glyphicon-comment text-success"></span><a href="http://www.jquery2dotnet.com">Comments</a>
-                                        <span class="badge">42</span>
-                                    </td>
-                                </tr>
                             </table>
                         </div>
                     </div>
@@ -71,6 +64,7 @@
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#"><span class="glyphicon glyphicon-send">
                             </span>쪽지</a>
+                             <span class="badge">42</span>
                         </h4>
                     </div>                    
                 </div>

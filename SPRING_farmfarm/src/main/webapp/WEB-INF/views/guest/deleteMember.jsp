@@ -136,8 +136,7 @@
 						<div class="col-lg-12">
 							<form id="login-form" action="deleteMemberPro" method="post" role="form" style="display: block;">
 								<div class="form-group">
-									<input type="password" name="userPassword" id="userPassword" tabindex="2" class="form-control" placeholder="비밀번호">
-									<input type="hidden" name="grade" value="${grade}">
+									<input type="password" name="userPassword" id="userPassword" tabindex="2" class="form-control" placeholder="비밀번호">									
 								</div>
 								<div class="form-group">
 									<div class="row">

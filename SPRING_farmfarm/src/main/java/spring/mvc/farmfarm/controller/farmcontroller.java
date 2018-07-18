@@ -70,6 +70,7 @@ public class farmcontroller {
 		System.out.println("logout");
 		
 		req.getSession().invalidate();
+	
 		System.out.println("logout");
 		return	"common/FarmFarm";
 	}
@@ -220,15 +221,30 @@ public class farmcontroller {
 	public String updateInfoPage(HttpServletRequest req, Model model) {
 		System.out.println("updateInfoPage");
 		
-		model.addAttribute("grade",req.getParameter("grade"));
 		return	"guest/updateInfoPage";
+	}
+	//정보수정뷰
+	@RequestMapping("updateInfoView")
+	public String updateInfoView(HttpServletRequest req, Model model) {
+		System.out.println("updateInfoView");
+		
+		return	"guest/updateInfoView";
+	}
+	
+	//회원수정처리
+	@RequestMapping("updateMemberPro")
+	public String updateMemberPro(HttpServletRequest req, Model model) {
+		System.out.println("updateMemberPro");
+		
+		mem_service.updateMemberPro(req, model);
+		return	"guest/updateMemberPro";
 	}	
+	
 	//회원탈퇴
 	@RequestMapping("deleteMember")
 	public String deleteMember(HttpServletRequest req, Model model) {
 		System.out.println("deleteMember");
 		
-		model.addAttribute("grade",req.getParameter("grade"));
 		return	"guest/deleteMember";
 	}	
 	//회원탈퇴처리
@@ -237,7 +253,6 @@ public class farmcontroller {
 		System.out.println("deleteMemberPro");
 		
 		mem_service.deleteMemberPro(req, model);
-		model.addAttribute("grade",req.getParameter("grade"));
 		req.getSession().invalidate();
 		return	"guest/deleteMemberPro";
 	}	

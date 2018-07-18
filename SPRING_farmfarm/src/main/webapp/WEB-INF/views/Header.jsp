@@ -78,7 +78,7 @@
             <ul class="nav navbar-nav navbar-right">
             	<!-- 비회원 헤더 -->
 	           <%-- <c:if test="${sessionScope.userId==null}"> --%>
-	           <c:if test="${grade!=1 and grade != 2 and grade!=3}">
+	           <c:if test="${sessionScope.grade!=1 and sessionScope.grade != 2 and sessionScope.grade!=3}">
 	              <li class="dropdown"><a href="#" class="dropdown=toggle"
 	                 data-toggle="dropdown" role="button" aria-haspopup="true"
 	                 aria-expanded="false">접속하기<span class="caret"></span></a>
@@ -93,7 +93,7 @@
 	           </c:if>
 	           
 	           <!-- 일반회원 헤더 -->
-	           <c:if test="${grade==1}">
+	           <c:if test="${sessionScope.grade==1}">
 	              <li class="dropdown"><a href="#" class="dropdown=toggle"
 	                 data-toggle="dropdown" role="button" aria-haspopup="true"
 	                 aria-expanded="false">마이페이지<span class="caret"></span></a>
@@ -108,7 +108,7 @@
 	           </c:if>
 	           
 	           <!-- 농부 헤더 -->
-	           <c:if test="${grade == 2}">
+	           <c:if test="${sessionScope.grade == 2}">
 				<li class="dropdown"><a href="#" class="dropdown=toggle"
 	                  data-toggle="dropdown" role="button" aria-haspopup="true"
 	                  aria-expanded="false">농부<span class="caret"></span></a>
@@ -117,12 +117,12 @@
 	                    <li><a href="#">이용내역</a></li>
 	                    <li><a href="#">프로필</a></li>
 	                    <li><a href="#">지불정보</a></li>
-	                    <li><a href="#">로그아웃</a></li>
+	                    <li><a href="logout">로그아웃</a></li>
 	                 </ul>
 	           </c:if>
 	           
 	           <!-- 관리자 헤더 -->
-	           <c:if test="${grade == 3}">
+	           <c:if test="${sessionScope.grade == 3}">
 				<li class="dropdown"><a href="#" class="dropdown=toggle"
 	                  data-toggle="dropdown" role="button" aria-haspopup="true"
 	                  aria-expanded="false">
@@ -137,7 +137,7 @@
 	                      <li><a href="BoardManage">게시판 관리</a></li>
 	                      <li><a href="DonateManage">기부 관리</a></li>
 	                      <li><a href="WeekFarmManage">주말농장 관리</a></li>
-	                      <li><a href="FarmFarm">로그아웃</a></li>
+	                      <li><a href="logout">로그아웃</a></li>
                     </ul>
 	           </c:if>
             </ul>

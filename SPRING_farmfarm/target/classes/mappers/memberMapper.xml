@@ -5,15 +5,19 @@
     
 <mapper namespace="spring.mvc.farmfarm.persistence.MemberDAO">
 	<select id="idCheck" resultType="int">
-			select count(mem_id) from tbl_member where mem_id=#{strId}
+		select count(mem_id) from tbl_member where mem_id=#{strId}
 	</select>
 
 	<select id="idPwdCheck" parameterType="java.util.Map" resultType="int">
-			select count(*) from tbl_member where mem_id=#{id} and mem_pwd=#{pwd}
+		select mem_grade from tbl_member where mem_id=#{id} and mem_pwd=#{pwd}
 	</select>
 	
 	<insert id="insertMember" parameterType="spring.mvc.farmfarm.dto.MemberDTO">
-			insert into tbl_member(mem_id,mem_pwd,mem_name,mem_hp,mem_email,mem_address,mem_grade,mem_adv,mem_regDate)
-			values(#{mem_id},#{mem_pwd},#{mem_name},#{mem_hp},#{mem_email},#{mem_address},1,0,sysdate)
+		insert into tbl_member(mem_id,mem_pwd,mem_name,mem_hp,mem_email,mem_address,mem_grade,mem_adv,mem_regDate)
+		values(#{mem_id},#{mem_pwd},#{mem_name},#{mem_hp},#{mem_email},#{mem_address},1,0,sysdate)
 	</insert>
+	
+	<delete id="deleteMember" parameterType="String">
+		delete from tbl_member where mem_id=#{strId}
+	</delete>
 </mapper>
