@@ -17,7 +17,9 @@
  	펀드 진행 내역
  	
  	<!-- 푸터 -->
-	<%@ include file="../Footer.jsp" %>
+<footer>
+<%@include file="../Footer.jsp" %>
+</footer>
  	
 </body>
 </html>

@@ -431,7 +431,9 @@
   </section>
 
 	<!-- 푸터 -->
-	<%@include file="../Footer.jsp" %>
+	<footer>
+<%@include file="../Footer.jsp" %>
+</footer>
 </body>
 
 </html>

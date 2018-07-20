@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="resources/css/bootstrap.css">
 </head>
 <body>
+
     <div class="section-bottom">
         <div class="row center row no-gutter">
             <ul class="footer-link">

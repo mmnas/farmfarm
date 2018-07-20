@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+<html>
 	<!-- 헤더 -->
 	<%@ include file="../Header.jsp" %>
  	
@@ -55,7 +55,11 @@
       <!--main content end-->
 
   </section>
-
+<footer>
+	<%@ include file="../Footer.jsp" %>
+</footer>
+	
+	
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -80,7 +84,7 @@
 
   </script>
  	<!-- 푸터 -->
-	<%@ include file="../Footer.jsp" %>
+ 	
  	
 </body>
 </html>
