@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="spring.mvc.farmfarm.persistence.FarmDAO">
+	<!-- 1.받은 쪽지 갯수 -->
+	<select id="getArtileCnt" resultType="int">
+		select count(*) from tbl_Letters
+	</select>
+	
+	<!-- 2.쪽지 리스트 확인 -->
+	<select id="getArticleList" parameterType="java.util.Map" resultType="spring.mvc.farmfarm.dto.LettersDTO">
+		<![CDATA[ 
+		SELECT * FROM(SELECT letternum, lettersubject, lettercontent, letterwritter, letterref, 
+					  letterref_step, letterref_level, letterreg_date, rownum rNum  
+		         FROM(SELECT * FROM tbl_Letters order by letterref desc, letterref_step ASC)
+	 	        )WHERE rNum >= #{start} AND rNum <= #{end}
+		  ]]>
+	</select>
+</mapper>

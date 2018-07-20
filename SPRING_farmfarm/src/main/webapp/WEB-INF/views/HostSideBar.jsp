@@ -1,38 +1,169 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<!-- ***추가 css  -->
- <!-- Bootstrap core CSS -->
-    <link href="resources/css/assets/css/bootstrap.css" rel="stylesheet">
-    <!--external css-->
-    <link href="resources/css/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="resources/css/assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/assets/js/gritter/css/jquery.gritter.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/assets/lineicons/style.css">    
-    
-    <!-- Custom styles for this template -->
-    <link href="resources/css/assets/css/style.css" rel="stylesheet">
-    <link href="resources/css/assets/css/style-responsive.css" rel="stylesheet">
-
-    <script src="resources/css/assets/js/chart-master/Chart.js"></script>
-<!-- ***추가 끝css  -->
 <body>
-
+<!--header start-->
+      <header class="header">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+              <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-tasks"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">오늘의 4 업데이트</p>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">경매 낙찰 건수</div>
+                                        <div class="percent">4건</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">펀드 완료 건수</div>
+                                        <div class="percent">6건</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">이번달 기부 모금액</div>
+                                        <div class="percent">600,000원</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">이번달 거래금</div>
+                                        <div class="percent">800,000원</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (Important)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="#">모두 확인했습니다.</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- settings end -->
+                    
+                    <!-- inbox dropdown start-->
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge bg-theme">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">5건의 기부신청단체가 있습니다.</p>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img src="resources/css/assets/img/ui-zac.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">장어린</span>
+                                    <span class="time">지금 막</span>
+                                    </span>
+                                    <span class="message">
+                                       	어린이 도움재단 입니다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img src="resources/css/assets/img/ui-divya.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">메리양</span>
+                                    <span class="time">40 분전</span>
+                                    </span>
+                                    <span class="message">
+                                     	아프리카 어린이모금단체 입니다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img src="resources/css/assets/img/ui-danro.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">김드림</span>
+                                    <span class="time">2 시간 전</span>
+                                    </span>
+                                    <span class="message">
+                                        	꿈나무 어린이 보육원 입니다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt src="resources/css/assets/img/ui-sherman.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">마리아</span>
+                                    <span class="time">4 시간 전</span>
+                                    </span>
+                                    <span class="message">
+                                       	 교회단체 입니다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">모두 확인 했습니다.</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+      </header>
+      <!--header end-->
 <!--sidebar start-->
 <aside>
     <div id="sidebar"  class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-        
-        	  <p class="centered"><a href="profile.html"><img src="resources/css/assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-        	  <h5 class="centered">관리자</h5>
-        	  	
+       			<p class="centered"><a href="HostMain.ad"><img src="resources/images/host/farmHost.png" width="60"></a></p>
+                <h5 class="centered">관리자</h5>
             <!-- <li class="mt">
                 <a class="active" href="#">
                     <i class="fa fa-dashboard"></i>
                     <span>기본</span>
                 </a>
-     			  <ul class="sub">
+                <ul class="sub">
                     <li><a href="general.html">General</a></li>
                     <li><a href="buttons.html">Buttons</a></li>
                     <li><a href="panels.html">Panels</a></li>
@@ -42,48 +173,38 @@
             <li class="sub-menu">
                 <a href="javascript:;" >
                     <i class="fa fa-desktop"></i>
-                    <span>펀드</span>
+                    <span>펀드 관리</span>
                 </a>
                 <ul class="sub">
-                    <li><a href="FundList.ad">진행내역</a></li>
-                    <li><a href="NoFund.ad">미등록 펀드(승인대기)</a></li>
+                    <li><a href="FundList.ad">펀드 진행내역</a></li>
+                    <li><a href="NoFundList.ad">미등록 펀드내역</a></li>
                 </ul>
             </li>
 
             <li class="sub-menu">
                 <a href="javascript:;" >
                     <i class="fa fa-cogs"></i>
-                    <span>경매</span>
+                    <span>경매 관리</span>
                 </a>
                 <ul class="sub">
-                    <li><a href="AucList.ad">진행내역</a></li>
-                    <li><a href="NoAuc.ad">미등록 경매(승인대기)</a></li>
+                    <li><a href="AucList.ad">경매 진행내역</a></li>
+                    <li><a href="NoAucList.ad">미등록 경매내역</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
                 <a href="javascript:;" >
                     <i class="fa fa-book"></i>
-                    <span>파트너 관리</span>
+                    <span>회원 관리</span>
                 </a>
                 <ul class="sub">
+                   <li><a href="GuestManage.ad">일반회원 관리</a></li>
                     <li><a href="PartnerManage.ad">파트너 관리</a></li>
-                    <li><a href="PartnerAdvManage.ad">어드벤티지 관리</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu">
-                <a href="javascript:;" >
-                    <i class="fa fa-tasks"></i>
-                    <span>회원관리</span>
-                </a>
-                <ul class="sub">
-                    <li><a href="GuestManage.ad">회원관리</a></li>
-                    <li><a href="GuestAdvManage.ad">어드벤티지 관리</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
                 <a href="javascript:;" >
                     <i class="fa fa-th"></i>
-                    <span>정산관리</span>
+                    <span>정산 관리</span>
                 </a>
                 <ul class="sub">
                     <li><a href="FundTotal.ad">펀드</a></li>
@@ -93,14 +214,14 @@
             <li class="sub-menu">
                 <a href="javascript:;" >
                     <i class=" fa fa-bar-chart-o"></i>
-                    <span>게시판</span>
+                    <span>게시판 관리</span>
                 </a>
                 <ul class="sub">
-                	<li><a  href="BoardManage.ad">공지사항</a></li>
-                    <li><a  href="#">문의 게시판[농부]</a></li>
-                    <li><a  href="#">문의 게시판[회원]</a></li>
-                    <li><a  href="#">소식 게시판</a></li>
-                    <li><a  href="#">요청 게시판</a></li>
+                   <li><a href="NoticeManage.ad">공지사항</a></li>
+                    <li><a href="#">문의 게시판[농부]</a></li>
+                    <li><a href="#">문의 게시판[회원]</a></li>
+                    <li><a href="#">소식 게시판</a></li>
+                    <li><a href="#">요청 게시판</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -109,9 +230,9 @@
                     <span>기부</span>
                 </a>
                 <ul class="sub">
-                    <li><a  href="DonateList.ad">기부내역</a></li>
-                    <li><a  href="DonateConList.ad">기부업체관리</a></li>
-                    <li><a  href="DonateTotal.ad">통계</a></li>
+                    <li><a href="DonateList.ad">기부 내역</a></li>
+                    <li><a href="DonateConList.ad">기부 업체현황</a></li>
+                    <li><a href="DonateTotal.ad">기부 통계</a></li>
                 </ul>
             </li>
             <li class="sub-menu">
@@ -120,10 +241,16 @@
                     <span>주말농장</span>
                 </a>
                 <ul class="sub">
-                	<li><a  href="WeekFarmManage.ad">주말농장</a></li>
+                   <li><a  href="WeekFarmManage.ad">주말농장 관리</a></li>
                   <li><a  href="IOTManage.ad">IoT</a></li>
                 </ul>
             </li>
+            <li>
+                 <a href="logout">
+                     <i class="fa fa-dashboard"></i>
+                     <span>로그아웃</span>
+                 </a>
+             </li> 
             
         </ul>
         <!-- sidebar menu end-->
@@ -132,7 +259,7 @@
 <!--sidebar end-->
 
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="resources/css/assets/js/jquery.js"></script>
+ <script src="resources/css/assets/js/jquery.js"></script>
 <script src="resources/css/assets/js/jquery-1.8.3.min.js"></script>
 <script src="resources/css/assets/js/bootstrap.min.js"></script>
 <script class="include" type="text/javascript" src="resources/css/assets/js/jquery.dcjqaccordion.2.7.js"></script>
@@ -142,35 +269,14 @@
 
 
 <!--common script for all pages-->
-<script src="resources/css/assets/js/common-scripts.js"></script>
+ <script src="resources/css/assets/js/common-scripts.js"></script>
 
 <script type="text/javascript" src="resources/css/assets/js/gritter/js/jquery.gritter.js"></script>
-<script type="text/javascript" src="resources/css/assets/js/gritter-conf.js"></script>
+<script type="text/javascript" src="resources/css/assets/js/gritter-conf.js"></script> 
 
 <!--script for this page-->
-   <script src="resources/css/assets/js/sparkline-chart.js"></script>    
-<script src="resources/css/assets/js/zabuto_calendar.js"></script>	
-
-<script type="text/javascript">
-    $(document).ready(function () {
-    var unique_id = $.gritter.add({
-        // (string | mandatory) the heading of the notification
-        title: 'Welcome to Dashgum!',
-        // (string | mandatory) the text inside the notification
-        text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo. Free version for <a href="http://blacktie.co" target="_blank" style="color:#ffd777">BlackTie.co</a>.',
-        // (string | optional) the image to display on the left
-        image: 'resources/css/assets/img/ui-sam.jpg',
-        // (bool | optional) if you want it to fade out on its own or just sit there
-        sticky: true,
-        // (int | optional) the time you want it to be alive for before fading out
-        time: '',
-        // (string | optional) the class name you want to apply to that specific message
-        class_name: 'my-sticky-class'
-    });
-
-    return false;
-    });
-</script>
+    <script src="resources/css/assets/js/sparkline-chart.js"></script>    
+<script src="resources/css/assets/js/zabuto_calendar.js"></script>   
 
 <script type="application/javascript">
     $(document).ready(function () {

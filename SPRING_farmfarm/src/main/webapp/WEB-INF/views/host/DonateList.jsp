@@ -14,7 +14,6 @@
  	<!-- 관리자 사이드 바 -->
 	<%@ include file="../HostSideBar.jsp" %>
  	
- 	펀드 진행 내역
  	
  	<!-- 푸터 -->
 	<%@ include file="../Footer.jsp" %>

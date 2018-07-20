@@ -1,11 +1,14 @@
 package spring.mvc.farmfarm.persistence;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import spring.mvc.farmfarm.dto.AdvantageDTO;
+import spring.mvc.farmfarm.dto.MemDoDTO;
 import spring.mvc.farmfarm.dto.MemberDTO;
 
 
@@ -66,6 +69,22 @@ public class MemberDAOImpl implements MemberDAO {
 		MemberDAO dao =ss.getMapper(MemberDAO.class);
 		updateCnt=dao.UpdateMember(dto);
 		return updateCnt;
+	}
+
+	@Override
+	public ArrayList<AdvantageDTO> getAdv(String strId) {
+		ArrayList<AdvantageDTO> dtos=null;
+		MemberDAO dao =ss.getMapper(MemberDAO.class);
+		dtos=dao.getAdv(strId);
+		return dtos;
+	}
+
+	@Override
+	public ArrayList<MemDoDTO> getDonate(String strId) {
+		ArrayList<MemDoDTO> dtos=null;
+		MemberDAO dao =ss.getMapper(MemberDAO.class);
+		dtos=dao.getDonate(strId);		
+		return dtos;
 	}
 	
 }

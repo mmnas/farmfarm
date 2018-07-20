@@ -3,7 +3,154 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <body>
-
+<!--header start-->
+      <header class="header">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+              <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-tasks"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">오늘의 4 업데이트</p>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">경매 낙찰 건수</div>
+                                        <div class="percent">4건</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">펀드 완료 건수</div>
+                                        <div class="percent">6건</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">이번달 기부 모금액</div>
+                                        <div class="percent">600,000원</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <div class="task-info">
+                                        <div class="desc">이번달 거래금</div>
+                                        <div class="percent">800,000원</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (Important)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="#">모두 확인했습니다.</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- settings end -->
+                    
+                    <!-- inbox dropdown start-->
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge bg-theme">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">5건의 기부신청단체가 있습니다.</p>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img src="resources/css/assets/img/ui-zac.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">장어린</span>
+                                    <span class="time">지금 막</span>
+                                    </span>
+                                    <span class="message">
+                                       	어린이 도움재단 입니다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img src="resources/css/assets/img/ui-divya.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">메리양</span>
+                                    <span class="time">40 분전</span>
+                                    </span>
+                                    <span class="message">
+                                     	아프리카 어린이모금단체 입니다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img src="resources/css/assets/img/ui-danro.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">김드림</span>
+                                    <span class="time">2 시간 전</span>
+                                    </span>
+                                    <span class="message">
+                                        	꿈나무 어린이 보육원 입니다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <span class="photo"><img alt src="resources/css/assets/img/ui-sherman.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">마리아</span>
+                                    <span class="time">4 시간 전</span>
+                                    </span>
+                                    <span class="message">
+                                       	 교회단체 입니다.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">모두 확인 했습니다.</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+      </header>
+      <!--header end-->
 <!--sidebar start-->
 <aside>
     <div id="sidebar"  class="nav-collapse ">
@@ -53,7 +200,7 @@
                  </a>
              </li>
              <li>
-                 <a href="#">
+                 <a href="LetterList">
                      <i class="fa fa-dashboard"></i>
                      <span>쪽지</span>
                  </a>

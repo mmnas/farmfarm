@@ -61,7 +61,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#"><span class="glyphicon glyphicon-send">
+                            <a data-toggle="collapse" data-parent="#accordion" href="LetterList"><span class="glyphicon glyphicon-send">
                             </span>쪽지</a>
                              <span class="badge">42</span>
                         </h4>

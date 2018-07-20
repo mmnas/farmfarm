@@ -25,9 +25,9 @@
       <!-- 가장 기본적인 형태의 네비게이션 바 -->
       <nav class="container-fluid">
       <!-- ****헤더 토글 추가  -->
-        <div class="sidebar-toggle-box">
-         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
-         </div>
+      <c:if test="${sessionScope.grade!=null }">
+      
+        </c:if>
          <!-- ****헤더 토글 추가 끝 --> 
          <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed"
@@ -125,12 +125,15 @@
 	           </c:if>
 	           
 	           <!-- 농부 헤더 -->
-	           <c:if test="${sessionScope.grade == 2}">
+	            <c:if test="${sessionScope.grade == 2}">
 				<li class="dropdown"><a href="#" class="dropdown=toggle"
 	                  data-toggle="dropdown" role="button" aria-haspopup="true"
-	                  aria-expanded="false">농부<span class="caret"></span></a>
+	                  aria-expanded="false"> 
+	                  <img src="resources/images/farmer/farmer.jpg" width="50px" height="50px">
+	                  <span class="caret"></span></a>
 	            
 	                <ul class="dropdown-menu">
+	                	<li><a href="Farmer_Apply">신청</a></li>
 	                    <li><a href="#">이용내역</a></li>
 	                    <li><a href="#">프로필</a></li>
 	                    <li><a href="#">지불정보</a></li>
@@ -140,22 +143,9 @@
 	           
 	           <!-- 관리자 헤더 -->
 	           <c:if test="${sessionScope.grade == 3}">
-				<li class="dropdown"><a href="#" class="dropdown=toggle"
-	                  data-toggle="dropdown" role="button" aria-haspopup="true"
-	                  aria-expanded="false">
-	                  <!-- 관리자 아이콘 - 마이페이지로 연결된다. -->
-	                  <img src="resources/images/host/farmHost.png" width="50px" height="50px">
-	                  <span class="caret"></span></a>
-	            
-	                <ul class="dropdown-menu">
-	                      <li><a href="ProductManage">상품 관리</a></li>
-	                      <li><a href="PartnerStatus">회원 관리</a></li>
-	                      <li><a href="CalculList">정산 관리</a></li>
-	                      <li><a href="BoardManage">게시판 관리</a></li>
-	                      <li><a href="DonateManage">기부 관리</a></li>
-	                      <li><a href="WeekFarmManage">주말농장 관리</a></li>
-	                      <li><a href="logout">로그아웃</a></li>
-                    </ul>
+		            <a href="HostMain.ad">
+		               <img src="resources/images/host/farmHost.png" class="img-circle" width="40">
+		            </a>
 	           </c:if>
             </ul>
          </div>

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import spring.mvc.farmfarm.service.BoardService;
 import spring.mvc.farmfarm.service.MemberService;
 
 @Controller
@@ -14,6 +15,9 @@ public class farmcontroller {
 	
 	@Autowired
 	MemberService mem_service;
+	
+	@Autowired
+	BoardService board_service;
 	
 	//메인화면
 	@RequestMapping("FarmFarm")
@@ -143,6 +147,8 @@ public class farmcontroller {
 	public String RequestBoard(HttpServletRequest req, Model model) {
 		System.out.println("RequestBoard");
 		
+		board_service.boardList(req, model);
+		
 		return	"guest/RequestBoard";
 	}
 	
@@ -169,10 +175,6 @@ public class farmcontroller {
 		
 		return	"guest/View";
 	}
-	
-	
-	
-	
 	
 	//공지사항
 	@RequestMapping("Notice")
@@ -263,7 +265,17 @@ public class farmcontroller {
 	public String gusetAdv(HttpServletRequest req, Model model) {
 		System.out.println("gusetAdv");
 		
+		mem_service.getAdv(req, model);
 		return	"guest/gusetAdv";
+	}
+	
+	//회원 내 기부내내역
+	@RequestMapping("guestDonateList")
+	public String guestDonateList(HttpServletRequest req, Model model) {
+		System.out.println("guestDonateList");
+		
+		mem_service.guestDonateList(req, model);
+		return	"guest/guestDonateList";
 	}
 	
 }

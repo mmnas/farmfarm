@@ -1,5 +1,6 @@
 package spring.mvc.farmfarm.service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 
+import spring.mvc.farmfarm.dto.AdvantageDTO;
+import spring.mvc.farmfarm.dto.MemDoDTO;
 import spring.mvc.farmfarm.dto.MemberDTO;
 import spring.mvc.farmfarm.persistence.MemberDAO;
 
@@ -141,7 +144,28 @@ public class MemberServiceImpl implements MemberService {
 		updateCnt=dao.UpdateMember(dto);
 		System.out.println("mem_ser_updateCnt:"+updateCnt);
 		
-		req.setAttribute("updateCnt", updateCnt);
+		model.addAttribute("updateCnt", updateCnt);
+		
+	}
+
+	@Override
+	public void getAdv(HttpServletRequest req, Model model) {
+		String mem_id = (String)req.getSession().getAttribute("userId");
+		
+		ArrayList<AdvantageDTO> dtos=null;
+		dtos=dao.getAdv(mem_id);
+		
+		model.addAttribute("dtos",dtos);
+	}
+
+	@Override
+	public void guestDonateList(HttpServletRequest req, Model model) {
+		String mem_id = (String)req.getSession().getAttribute("userId");
+		
+		ArrayList<MemDoDTO> dtos=null;
+		dtos=dao.getDonate(mem_id);
+		
+		model.addAttribute("dots",dtos);
 		
 	}
 
