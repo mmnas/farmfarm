@@ -186,11 +186,11 @@
 <!--이달의 농부  -->
 <div class="section layout-sm">
     <div class="container">
-        <a href="https://farmingfund.co.kr/event/2018_farmers_of_the_month/5949">
-            <div style="width: 100%; height: 332px; background-size: cover;">
+    	<div style="width: 100%; height: 332px; background-size: cover; margin-left:35px;">
+	        <a href="https://farmingfund.co.kr/event/2018_farmers_of_the_month/5949">
             	<img src="resources/images/weekfarmer.PNG">
-            </div>
-        </a>
+        	</a>
+       	</div>
     </div>
 </div>
 <!--이달의 농부  -->    

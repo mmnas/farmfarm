@@ -72,19 +72,18 @@ public class MemberDAOImpl implements MemberDAO {
 	}
 
 	@Override
-	public ArrayList<AdvantageDTO> getAdv(String strId) {
-		ArrayList<AdvantageDTO> dtos=null;
+	public int getAdvCnt(String strId) {
+		int selectCnt=0;
 		MemberDAO dao =ss.getMapper(MemberDAO.class);
-		dtos=dao.getAdv(strId);
-		return dtos;
+		selectCnt=dao.getAdvCnt(strId);
+		return selectCnt;
 	}
 
 	@Override
-	public ArrayList<MemDoDTO> getDonate(String strId) {
-		ArrayList<MemDoDTO> dtos=null;
+	public ArrayList<AdvantageDTO> getAdv(Map<String,Object> map) {
+		ArrayList<AdvantageDTO> dtos=null;
 		MemberDAO dao =ss.getMapper(MemberDAO.class);
-		dtos=dao.getDonate(strId);		
+		dtos=dao.getAdv(map);
 		return dtos;
-	}
-	
+	}	
 }

@@ -19,8 +19,8 @@ public interface MemberService {
 	//회원탈퇴처리
 	public void deleteMemberPro(HttpServletRequest req, Model model);
 	
-	//회원점수 가져오기
-	public void getAdv(HttpServletRequest req, Model model);
 	//회원 기부내역 가져오기
-	public void guestDonateList(HttpServletRequest req, Model model);
+	public void guestAdvList(HttpServletRequest req, Model model);
+	
+	
 }

@@ -265,7 +265,7 @@ public class farmcontroller {
 	public String gusetAdv(HttpServletRequest req, Model model) {
 		System.out.println("gusetAdv");
 		
-		mem_service.getAdv(req, model);
+		mem_service.guestAdvList(req, model);
 		return	"guest/gusetAdv";
 	}
 	
@@ -274,7 +274,7 @@ public class farmcontroller {
 	public String guestDonateList(HttpServletRequest req, Model model) {
 		System.out.println("guestDonateList");
 		
-		mem_service.guestDonateList(req, model);
+		mem_service.guestAdvList(req, model);
 		return	"guest/guestDonateList";
 	}
 	

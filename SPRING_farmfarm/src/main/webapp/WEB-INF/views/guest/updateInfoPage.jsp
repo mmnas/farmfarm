@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../setting.jsp" %>    
 <html>
-
 <style type="text/css">
 	/* body {
 	    padding-top: 90px;

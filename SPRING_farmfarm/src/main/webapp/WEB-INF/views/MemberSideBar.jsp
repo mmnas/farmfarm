@@ -3,6 +3,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <body>
+<!-- Bootstrap core CSS -->
+    <link href="resources/css/assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="resources/css/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="resources/css/assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/assets/lineicons/style.css">    
+    
+    <!-- Custom styles for this template -->
+    <link href="resources/css/assets/css/style.css" rel="stylesheet">
+    <link href="resources/css/assets/css/style-responsive.css" rel="stylesheet">
+
+    <script src="resources/css/assets/js/chart-master/Chart.js"></script>
+
 <!--header start-->
       <header class="header">
               <div class="sidebar-toggle-box">

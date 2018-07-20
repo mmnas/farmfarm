@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import spring.mvc.farmfarm.dto.AdvantageDTO;
-import spring.mvc.farmfarm.dto.MemDoDTO;
 import spring.mvc.farmfarm.dto.MemberDTO;
 
 
@@ -22,8 +21,11 @@ public interface MemberDAO {
 	//회원정보 수정처리
 	public int UpdateMember(MemberDTO dto);
 	
-	//회원점수 가져오기
-	public ArrayList<AdvantageDTO> getAdv(String strId);
-	//회원 내 기부내역 가져오기
-	public ArrayList<MemDoDTO> getDonate(String strId);
+	//회원 점수 기록횟수
+	public int getAdvCnt(String strId);
+	//회원 점수목록 가져오기
+	public ArrayList<AdvantageDTO> getAdv(Map<String,Object> map);
+	
+	
+	
 }

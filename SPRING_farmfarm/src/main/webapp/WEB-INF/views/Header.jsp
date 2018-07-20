@@ -8,16 +8,7 @@
    <!-- Bootstrap core CSS -->
     <link href="resources/css/assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
-    <link href="resources/css/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="resources/css/assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/assets/js/gritter/css/jquery.gritter.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/assets/lineicons/style.css">    
     
-    <!-- Custom styles for this template -->
-    <link href="resources/css/assets/css/style.css" rel="stylesheet">
-    <link href="resources/css/assets/css/style-responsive.css" rel="stylesheet">
-
-    <script src="resources/css/assets/js/chart-master/Chart.js"></script>
 <!-- ***추가 끝css  -->
 <body>
 <!-- 헤더시작 -->

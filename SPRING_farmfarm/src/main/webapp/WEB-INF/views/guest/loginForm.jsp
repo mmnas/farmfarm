@@ -9,8 +9,6 @@
 <!-- 외부스타일 시트 적용 -->
 </head>
 
-<body>
-
 <!-- 1.css 추가부분 -->
 <style type="text/css">
 	/* body {
@@ -114,6 +112,8 @@
 	}
 	
 </style>
+<body>
+
 
 <!-- 헤더시작 -->
 	<%@include file="../Header.jsp" %>

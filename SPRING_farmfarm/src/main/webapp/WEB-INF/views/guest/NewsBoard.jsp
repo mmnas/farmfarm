@@ -40,7 +40,7 @@
                                     <div id="vertical-timeline" class="vertical-container dark-timeline">
                         <div class="vertical-timeline-block">
                 <div class="vertical-timeline-icon navy-bg">
-                    <i class="fa fa-briefcase"></i>
+                    <i class="fa fa-briefcase"><img src="resources/images/bag.png"></i>
                 </div>
 
                 <div class="vertical-timeline-content">
@@ -50,18 +50,7 @@
                     </span>
                 </div>
             </div>
-                        <div class="vertical-timeline-block">
-                <div class="vertical-timeline-icon navy-bg">
-                    <i class="fa fa-briefcase"></i>
-                </div>
-
-                <div class="vertical-timeline-content">
-                                            <h2><a href="/board/story/6077">6월 연휴 배송 안내(6/6, 6/13)</a></h2>
-                                        <span class="vertical-date">
-                        <small>2018-06-01</small>
-                    </span>
-                </div>
-            </div>
+           
                      
         <div class="row text-center">
             <ul class="pagination"><li class="disabled"><span>«</span></li> <li class="active"><span>1</span></li><li><a href="https://farmingfund.co.kr/board/story?page=2">2</a></li><li><a href="https://farmingfund.co.kr/board/story?page=3">3</a></li><li><a href="https://farmingfund.co.kr/board/story?page=4">4</a></li><li><a href="https://farmingfund.co.kr/board/story?page=5">5</a></li><li><a href="https://farmingfund.co.kr/board/story?page=6">6</a></li> <li><a href="https://farmingfund.co.kr/board/story?page=2" rel="next">»</a></li></ul>
