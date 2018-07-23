@@ -43,7 +43,7 @@ public class HostController {
       return "host/FundList";
    }
    
-   // 미등록 펀드 내역
+   // 미등록 펀드내역
    @RequestMapping("NoFundList.ad")
    public String NoFundList(HttpServletRequest req, Model model) {
       System.out.println("NoFundList.ad");
@@ -60,7 +60,7 @@ public class HostController {
       return "host/AucList";
    }
    
-   // 미등록 경매 내역
+   // 미등록 경매내역
    @RequestMapping("NoAucList.ad")
    public String NoAucList(HttpServletRequest req, Model model) {
       System.out.println("NoAucList.ad");
@@ -116,7 +116,37 @@ public class HostController {
       return "host/NoticeList";
    }
    
-   // 문의 게시판[농부], [회원], 소식 게시판, 요청 게시판 추가해야함
+   /*// 문의 게시판[농부]
+   @RequestMapping("PartnerQnaList.ad")
+   public String PartnerQnaList(HttpServletRequest req, Model model) {
+      System.out.println("PartnerQnaList.ad");
+      
+      return "문의 게시판[농부] 만든 페이지로 이동";
+   }
+   
+   // 문의 게시판[회원]
+   @RequestMapping("guestQnaList.ad")
+   public String guestQnaList(HttpServletRequest req, Model model) {
+      System.out.println("guestQnaList.ad");
+      
+      return "문의 게시판[회원] 만든 페이지로 이동";
+   }
+   
+   // 소식 게시판
+   @RequestMapping("partnerNewsList.ad")
+   public String partnerNewsList(HttpServletRequest req, Model model) {
+      System.out.println("partnerNewsList.ad");
+      
+      return "소식 게시판 만든 페이지로 이동";
+   }
+   
+   // 요청 게시판
+   @RequestMapping("guestReqList.ad")
+   public String guestReqList(HttpServletRequest req, Model model) {
+      System.out.println("guestReqList.ad");
+      
+      return "요청 게시판 만든 페이지로 이동";
+   }*/
    
    // ************* 기부 *************
    // 기부내역
@@ -135,7 +165,7 @@ public class HostController {
       return "host/DonateConList";
    }
 
-   // 기부 통계
+   // 기부 현황
    @RequestMapping("DonateTotal.ad")
    public String DonateTotal(HttpServletRequest req, Model model) {
       System.out.println("DonateTotal.ad");
@@ -159,6 +189,5 @@ public class HostController {
       
       return "host/IOTManage";
    }
-   
    
 }

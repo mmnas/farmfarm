@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../setting.jsp" %>
 <html>
-<meta name="viewport" content="width=device-width" , initial-scale="1">
 <link rel="stylesheet" href="resources/css/bootstrap.css">
 <!-- 외부스타일 시트 적용 -->
 	

@@ -236,7 +236,7 @@ ul.top-menu > li > .logout {
 }
 
 #sidebar h5 {
-	color: #f2f2f2;
+	color: #00A58A;
 	font-weight: 700;
 }
 
@@ -1054,10 +1054,10 @@ PANELS CONFIGURATIONS
 /*Green Panel*/
 .green-panel {
 	text-align: center;
-	background: #68dff0;
+	background: #ffffff;
 }
 .green-panel .green-header {
-	background: #43b1a9;
+	background: #00A58A;
 	padding: 3px;
 	margin-bottom: 15px;
 }
@@ -1071,7 +1071,7 @@ PANELS CONFIGURATIONS
 	font-weight: 100;
 }
 .green-panel p {
-	color: white;
+	color: #00A58A;
 }
 
 /*White Panel */

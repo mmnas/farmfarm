@@ -4,19 +4,14 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="resources/css/bootstrap.css">
-   
-   <!-- Bootstrap core CSS -->
-    <link href="resources/css/assets/css/bootstrap.css" rel="stylesheet">
-    <!--external css-->
     
-<!-- ***추가 끝css  -->
 <body>
 <!-- 헤더시작 -->
    <nav class="navbar navbar-default">
       <!-- 가장 기본적인 형태의 네비게이션 바 -->
       <nav class="container-fluid">
       <!-- ****헤더 토글 추가  -->
-      <c:if test="${sessionScope.grade!=null }">
+      <c:if test="${sessionScope.grade != null }">
       
         </c:if>
          <!-- ****헤더 토글 추가 끝 --> 
